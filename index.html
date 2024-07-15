@@ -1,137 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Work Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="My simple website of my work portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            html {
-                background-color: black;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My simple website of my work portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Portfolio</title>
+    <style>
+        html {
+            background-color: black;
+        }
 
-            body {
-                padding: 30px;
-            }
-              
-            h1 {
-                color: whitesmoke;
-                display: flex;
-                justify-content: center;
-                font-size: 4rem;
-            }
-            
-            #image {
-                text-align: center;
-            }
+        body {
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            color: whitesmoke;
+        }
 
-            #photo-caption {
-                color: whitesmoke;
-                display: flex;
-                justify-content: center;
-                font-weight: bold;
-                font-size: 2rem;
-                margin-bottom: 50px;
-            }
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+        }
 
-            h2 {
-                color: whitesmoke;
-                font-size: 3rem;
-            }
+        #image {
+            text-align: center;
+        }
 
-            ol {
-                color: whitesmoke;
-                font-size: 1.5rem;
-                margin-bottom: 50px;
-            }
+        #photo-caption {
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
 
-            span {
-                font-weight: bolder;
-                color: red;
-            }
+        h2 {
+            font-size: 3rem;
+            margin-top: 20px;
+        }
 
-            ul {
-                color: whitesmoke;
-                font-size: 1.5rem;
-            }
+        ol {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
 
-            #skills {
-                margin: 10px 10px 10px 10px;
-            }
+        span {
+            font-weight: bold;
+            color: red;
+        }
 
-            #social-platform {
-                margin: 10px 10px 10px 10px;
-            }
+        ul {
+            font-size: 1.5rem;
+            list-style-type: none;
+            padding: 0;
+        }
 
-            #C-V {
-                font-size: 1.5rem;
-                color: whitesmoke;
-            }
-        </style>
-    </head>
-    <body>
-        <h1> Work Porfolio of Sinethemba Tompelo</h1>
-        <br>
-        <div id="image">
-            <img src="./images/Snax-solving-rubik-cube-resized-again.jpg" alt="Young black man solving a Rubik cube">
+        ul li {
+            margin: 10px 0;
+        }
+
+        .skills-icons img {
+            margin: 5px;
+            vertical-align: middle;
+        }
+
+        #social-platforms a {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .cv-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: whitesmoke;
+            text-decoration: none;
+            border: 1px solid whitesmoke;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .cv-link:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Work Portfolio of Sinethemba Tompelo</h1>
+    <div id="image">
+        <img src="./images/Snax-solving-rubik-cube-resized-again.jpg" alt="Young black man solving a Rubik cube">
+    </div>
+    <p id="photo-caption">Sinethemba Tompelo is smiling through the pain, trying to solve the Rubik cube.</p>
+
+    <h2>Bio</h2>
+    <ol>
+        <li>He is <span>21 years old</span>.</li>
+        <li>He <span>matriculated in 2020 at Athlone Boys' High School</span>, in Johannesburg.</li>
+        <li>He <span>enjoys spending time on problem-solving hobbies</span>,<span> mainly playing chess</span>.</li>
+        <li>He <span>currently lives in Hillbrow</span>.</li>
+        <li>He <span>discovered the passion for coding in September 2022</span>, <span>the same time he underwent basic computer training</span>.</li>
+        <li>He <span>is very introverted, but not afraid to talk</span>.</li>
+    </ol>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Python: NumPy, Pandas & Matplotlib</li>
+        <div class="skills-icons">
+            <img src="./images/python3-icon-resized.png" alt="Python 3 logo">
+            <img src="./images/pandas-icon-resized.png" alt="Pandas package logo">
+            <img src="./images/numpy-icon-resized.png" alt="Numpy package logo">
+            <img src="./images/matplotlib-icon-resized.png" alt="Matplotlib library logo">
         </div>
-        <p id="photo-caption">Sinethemba Tompelo is smiling through the pain, trying to solve the Rubik cube.</p>
-        <br>
-        <h2>Bio</h2>
-        <ol>
-            <li>
-                He is <span>21 years old</span>.
-            </li>
-            <li>
-                He <span>matriculated in 2020 at Athlone Boys' High School</span>, in Johannesburg.
-            </li>
-            <li>
-                He <span>enjoys spending time on problem-solving hobbies</span>,<span> mainly playing chess</span>. 
-            </li>
-            <li>
-                He <span>currently lives in Hillbrow</span>.
-            </li>
-            <li>
-                He <span>discovered the passion for coding in September 2022</span>, <span> the same time he had underwent basic computer training</span>. 
-            </li>
-            <li>
-                He <span>is very introverted, but not afraid to talk</span>.
-            </li>
-        </ol>
-        <br>
-        <h2>Skills</h2>
-        <ul>
-            <li>
-                Python: NumPy, Pandas & Matplotlib
-            </li>
-            <img id="skills" src="./images/python3-icon-resized.png" alt="Python 3 logo">
-            <img id="skills" src="./images/pandas-icon-resized.png" alt="Pandas package logo">
-            <img id="skills" src="./images/numpy-icon-resized.png" alt="Numpy package logo">
-            <img id="skills" src="./images/matplotlib-icon-resized.png" alt="Matplotlib library logo">
-            <li>
-                Git & GitHub
-            </li>
-            <img id="skills" src="./images/git-icon.png" alt="Git logo">
-            <img id="skills" src="./images/github-icon-resized.png" alt="GitHub logo">
-            <li>
-                HTML5 & CSS3
-            </li>
-            <img id="skills" src="./images/html5-and-css3-logo-resized.png" alt="HTML5 and CSS3 logos">
-            <li>
-                SQL: PostgreSQL
-            </li>
-            <img id="skills" src="./images/postgresql-logo-resized.png" alt="PostgreSQL logo">
-        </ul>
-        <br>
-        <h2>Social Platforms</h2>
+        <li>Git & GitHub</li>
+        <div class="skills-icons">
+            <img src="./images/git-icon.png" alt="Git logo">
+            <img src="./images/github-icon-resized.png" alt="GitHub logo">
+        </div>
+        <li>HTML5 & CSS3</li>
+        <div class="skills-icons">
+            <img src="./images/html5-and-css3-logo-resized.png" alt="HTML5 and CSS3 logos">
+        </div>
+        <li>SQL: PostgreSQL</li>
+        <div class="skills-icons">
+            <img src="./images/postgresql-logo-resized.png" alt="PostgreSQL logo">
+        </div>
+    </ul>
+
+    <h2>Social Platforms</h2>
+    <div id="social-platforms">
         <a href="https://www.instagram.com/snax_the_klown/" target="_blank">
-            <img id="social-platform" src="./images/instagram-logo-resized.png" alt="@snax_the_klown">
+            <img src="./images/instagram-logo-resized.png" alt="@snax_the_klown">
         </a>
         <a href="https://github.com/Snax777" target="_blank">
-            <img id="social-platform" src="./images/github-logo.png">
+            <img src="./images/github-logo.png" alt="GitHub logo" alt="github.com/Snax777">
         </a>
-        <br>
-        <h2>C.V.</h2>
-        <p id="C-V">To view my C.V., <a href="./curriculum-vitae/C.V..pdf" target="_blank">click here</a>.</p>
-    </body>
+    </div>
+
+    <h2>C.V.</h2>
+    <p id="C-V">To view my C.V., <a class="cv-link" href="./curriculum-vitae/C.V..pdf" target="_blank">click here</a>.</p>
+</body>
 </html>
