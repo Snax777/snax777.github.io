@@ -71,15 +71,30 @@
             font-size: 1.5rem;
         }
 
-        .cv-link {
+        #Resume {
+            font-size: 1.5rem;
+        }
+
+        .cv-resume-link {
             font-size: 1.5rem;
             color: whitesmoke;
         }
 
-        .cv-link:hover {
+        .cv-resume-link:hover {
             background-color: whitesmoke;
             color: black;
         }
+
+        .notebook-link {
+            font-size: 1.5rem;
+            color: whitesmoke;
+        }
+
+        .notebook-link:hover {
+            background-color: rgb(175, 39, 39);
+            color: black;
+        }
+
     </style>
 </head>
 <body>
@@ -101,12 +116,15 @@
 
     <h2>Skills</h2>
     <ul>
-        <li>Python: NumPy, Pandas & Matplotlib
+        <li>Python: NumPy, Pandas, Matplotlib, Scipy, Statsmodels & Scikit-learn
             <div class="skills-icons">
                 <img src="./images/python3-icon-resized.png" alt="Python 3 logo">
                 <img src="./images/pandas-icon-resized.png" alt="Pandas package logo">
                 <img src="./images/numpy-icon-resized.png" alt="Numpy package logo">
                 <img src="./images/matplotlib-icon-resized.png" alt="Matplotlib library logo">
+                <img src="./images/scipy.png" alt="Scipy library logo">
+                <img src="./images/statsmodels-white-background.jpg" alt="Statsmodels library logo">
+                <img src="./images/scikit-learn-white-background.jpg" alt="scikit-learn library logo">
             </div>
         </li>
         <li>Git & GitHub
@@ -137,7 +155,24 @@
         </a>
     </div>
 
-    <h2>C.V.</h2>
-    <p id="C-V">To view my C.V., <a class="cv-link" href="./curriculum-vitae/C.V..pdf" target="_blank">click here</a>.</p>
+    <br><h2>C.V.</h2><br>
+    <p id="C-V">To view my C.V., <a class="cv-resume-link" href="./curriculum-vitae/C.V..pdf" target="_blank">click here</a>.</p>
+
+    <br><h2>Resume</h2><br>
+    <p id="Resume">To view my resume, <a class="cv-resume-link" href="./curriculum-vitae/resume/Resume-Sinethemba-Tompelo.docx" target="_blank">click here</a></p>
+    
+    <br><h2>Projects</h2><br>
+    <ul>
+        <li>Notebooks:
+            <ul>
+                <li>
+                    <a class="notebook-link" href="https://nbviewer.org/github/Snax777/notebooks/blob/main/housing_price/notebook/house_price_prediction.ipynb" target="_blank">
+                        - Housing Price Prediction
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
 </body>
 </html>
